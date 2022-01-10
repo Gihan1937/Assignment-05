@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table id="table">
+        
+    </table>
+
+
+        <div>
+                <button id="addRowButton" onClick="addRow()">Add Row</button>
+                <button id="addColumnButton" onClick="addColumn()">Add Column</button>
+                <button id="removeRowButton" onClick="removeRow()">Remove Row</button>
+                <button id="removeColumnButton" onClick="removeColumn()">Remove Column</button>
+        </div>
+        <br>
+        <div>
+            <div id="resetColorOfCellsButton" onClick="resetColorOfCells()">
+                <button>Reset Color Of Cells</button>
+            </div>
+        </div>
+
+        <div>
+            <h6> Select a color from a dropdown menu and click on a single cell, changing its color to the currently selected color!</h6>
+            <select name="colors" id="select-color" onchange="selectColor(this.value)">
+                <option value="">--Select A Color</option>
+                <option class="yellow" id="yellow" value="yellow">yellow</option>
+                <option class="red" id="red" value="red">red</option>
+                <option class="green" id="green" value="green">Green</option>
+                <option class="blue" id="blue" value="blue">blue</option>
+            </select>
+        </div>
+
+        <div>
+            <h6>Select a color to change all the <b>white</b> Cells!</h6>
+
+            <select name="colors" id="select-color" onchange="selectColor(this.value)">
+                <option value="">--Select A Color</option>
+                <option class="yellow" id="yellow" value="yellow">yellow</option>
+                <option class="red" id="red" value="red">red</option>
+                <option class="green" id="green" value="green">Green</option>
+                <option class="blue" id="blue" value="blue">blue</option>
+            </select>
+
+            <div id="colorAllUncoloredCellsButton" onClick="colorAllUncoloredCells()">
+                <button>Color All Uncolored Cells</button>
+            </div>
+
+
+        </div>
+
+        <div>
+            <h6 class=py-2>Select a color to change ALL the Cells!</h6>
+
+            <select name="colors" id="select-color" onchange="selectColor(this.value)">
+                <option value="">--Select A Color</option>
+                <option class="yellow" id="yellow" value="yellow">yellow</option>
+                <option class="red" id="red" value="red">red</option>
+                <option class="green" id="green" value="green">Green</option>
+                <option class="blue" id="blue" value="blue">blue</option>
+            </select>
+
+            <div id="colorAllCellsButton" onClick="colorAllCells()">
+                <button>Color All Cells</button>
+            </div>
+
+        </div>
+        <div>
+            <h6 class=py-2>Select a color and drag over the Cells!</h6>
+            <select name="colors" id="select-color" onchange="selectColor(this.value)">
+               <option value="">--Select A Color</option>
+                <option class="yellow" id="yellow" value="yellow">yellow</option>
+                <option class="red" id="red" value="red">red</option>
+                <option class="green" id="green" value="green">Green</option>
+                <option class="blue" id="blue" value="blue">blue</option>
+            </select>
+        </div>
+
+
+        <br><br>
+        <div>
+            <button id="resetButton" onClick="reset()">Reset Page</button>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
